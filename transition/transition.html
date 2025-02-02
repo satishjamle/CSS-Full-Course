@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transiiton</title>
+    <style>
+        .main{
+
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: chocolate;
+            /* transition: property-name duration timing-function delay; */
+            /*
+            ease:  transition effect with a slow start, then fast, then end slowly (this is default)
+            ease-in: transition effect with a slow start
+            linear:  transition effect with the same speed from start to end
+            ease-out:  transition effect with a slow end
+            ease-in-out: specifies a transition effect with a slow start and end
+            */
+            /* transition: margin-left 10s ease-in; */
+            transition: margin-left 10s ease-out;
+        }
+        .main:hover .box{
+            margin-left: 700px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

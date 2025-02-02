@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Root Variable</title>
+    <style>
+        /* variable : data stored(value stored) 
+
+        :root{
+            --varname : value
+        }
+
+        */
+        :root{
+            --textcenter : center;
+        }
+        .textcenter {
+            text-align: var(--a);
+        }   
+        p{
+            text-align: var(--a);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="textcenter">Heading1</h1>
+    <h2 class="textcenter">Heading2</h2>
+    <h3 class="textcenter">Heading3</h3>
+    <p>hello</p>
+</body>
+</html>

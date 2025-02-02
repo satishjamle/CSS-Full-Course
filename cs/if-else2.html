@@ -1,0 +1,15 @@
+Name: <input type="text" id="nm">
+<button onclick="checkname()">Check</button>
+
+<script>
+    function checkname() {
+        let name = document.getElementById("nm").value;
+        if (name == "admin") {
+            console.log("Valid user name");
+        }
+        else
+            alert("Invalid username");
+    }
+
+
+</script>

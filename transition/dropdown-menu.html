@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down Menu</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background-color: cadetblue;
+        }
+        nav ul {
+            display: flex;
+        }
+        nav ul li {
+        display: inline-block;
+        padding: 15px;  
+        cursor: pointer;   
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: #fff;
+        }
+        #droplist{
+            position: relative;
+        }
+        .dropdown{
+            position: absolute;
+            top: 48px;
+            background-color: brown;
+            width: 800px;
+            opacity: 0;
+            transition: all 0.8s;
+        }
+        .dropdown ul{
+            flex-direction: column;
+        }
+        .dropdown ul li {
+            list-style-type: none;
+            padding: 10px;   
+        }
+        .dropdown ul li a{
+            color: #fff;
+            text-decoration: none;
+        }
+        #droplist:hover .dropdown{
+            opacity: 1;
+        }
+        section{
+            background: url("../bg/gym-bg.jpg") no-repeat center center/cover;
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Aboutus</a></li>
+        <li><a href="">Services</a></li>
+        <li id="droplist">
+            <a href="">Courses</a>
+             <div class="dropdown">
+                 <ul>
+                    <li><a href="">PHP</a></li>
+                    <li><a href="">JAVA</a></li>
+                    <li><a href="">PYTHON</a></li>
+                 </ul>
+             </div>
+        </li>
+        <li><a href="">Contact us</a></li>
+    </ul>
+</nav>
+<section></section>
+</body>
+</html>

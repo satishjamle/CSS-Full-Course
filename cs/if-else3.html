@@ -1,0 +1,25 @@
+Marks : <input type="text" id="marks">
+<button onclick="grading()">CLick</button>
+<script>
+    function grading() {
+        let marks = Number(document.getElementById("marks").value);
+        if (marks >= 60 && marks <= 100) {
+            alert("GradeA");
+        }
+        else if (marks >= 45 && marks <= 59) {
+            alert("GradeB");
+        }
+        else if (marks >= 35 && marks <= 44) {
+            alert("GradeC");
+        }
+        else if (marks > 100) {
+            alert("Out of range");
+        }
+        else {
+            alert("failed");
+        }
+
+    }
+
+
+</script>

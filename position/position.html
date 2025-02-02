@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position : relative , absolute , fixed , sticky, </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            border: 2px solid;
+            margin: 50px;
+            position: relative;
+            overflow: hidden;
+            background-color: orange;
+        }
+        img{
+            width: 300px;
+            height: 300px;
+        }
+        p{
+            position: absolute;
+            top: -110px;
+
+            /* left, rigth, top, bottom */
+        }
+        .box:hover p{
+            top: 0;
+        }
+        .box:hover img{
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="../bg/gym-bg.jpg" alt="">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, cum fugit asperiores magnam enim molestiae ab molestias voluptate sapiente explicabo corrupti rerum sit ipsum ratione tenetur. Qui suscipit saepe deserunt.z
+        </p>
+    </div>
+</body>
+</html>

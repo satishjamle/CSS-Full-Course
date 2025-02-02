@@ -1,0 +1,36 @@
+CSS :  Cascading Stylesheet :  
+
+CSS are used for to design a web page :  
+
+----------------------------------------
+
+Types of css :  
+1. External css : it create outsite the program 
+
+<head>
+    <link href="css file name" rel="stylesheet">
+</head>
+
+---------------------------------------------------
+
+2.  Internal CSS  : it create inside the program(file)
+<head>
+    <style>
+        css code here 
+    </style>
+</head>
+
+------------------------------------------------
+
+3. Inline CSS : It appy on every html tags  .. 
+
+<h1 style="css code"></h1>
+----------------------------------------------
+
+
+
+
+
+
+
+3. Inline CSS 

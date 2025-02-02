@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Scroll</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        nav{
+            display: flex;
+            position: relative;
+            background-color: cadetblue;
+            position: sticky;
+            top: 0;
+        }
+        #logo{
+            font-size: 20px;
+            text-decoration: none;
+            padding: 20px;
+        }
+        nav ul{
+            display: flex;
+            position: absolute;
+            right: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            padding: 20px;
+        }
+        /* banner section css */
+        .banner-section{
+            background: url("../bg/gym-bg.jpg") no-repeat center center/cover;
+            background-attachment: fixed;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            font-size: 40px;
+            padding: 30px 0;
+        }
+        p{
+            padding: 15px 0;
+            line-height: 50px;
+        }
+        .aboutus-section{
+            background: darkgrey;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .services-section{
+            background: darkolivegreen;
+            color: #fff;
+            text-align: center;
+        }
+        .gallery-section{
+            background: chocolate;
+            color: #fff;
+            text-align: center;
+        }
+        .contact-section{
+            background: cornflowerblue;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="" id="logo">Logo</a>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact us</a></li>
+    </ul>
+</nav>
+<!-- banner section -->
+<section class="banner-section">
+    <h1>Welcome to URBANIC Design</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt temporibus eveniet, expedita delectus doloribus maiores neque asperiores? Vero non, ab praesentium explicabo quidem, harum temporibus itaque exercitationem dolorem neque consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis rerum repellendus nemo laboriosam consequuntur nulla sapiente architecto, sit aliquam voluptatum optio cupiditate porro, dolores eveniet nesciunt neque, vero magni tenetur.
+    </p>
+</section>
+<!-- About us section -->
+<section class="aboutus-section" id="about">
+    <h1>About us</h1>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus atque laboriosam sequi autem eaque, vitae nihil itaque aperiam ipsum ut maxime similique, cumque quis, veniam beatae sed deserunt! Exercitationem, reprehenderit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus atque laboriosam sequi autem eaque, vitae nihil itaque aperiam ipsum ut maxime similique, cumque quis, veniam beatae sed deserunt! Exercitationem, reprehenderit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus atque laboriosam sequi autem eaque, vitae nihil itaque aperiam ipsum ut maxime similique, cumque quis, veniam beatae sed deserunt! Exercitationem, reprehenderit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus atque laboriosam sequi autem eaque, vitae nihil itaque aperiam ipsum ut maxime similique, cumque quis, veniam beatae sed deserunt! Exercitationem, reprehenderit!
+    </p>
+</section>
+<!-- Services section -->
+<section class="services-section" id="services">
+    <h1>Services</h1>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus atque laboriosam sequi autem eaque, vitae nihil itaque aperiam ipsum ut maxime similique, cumque quis, veniam beatae sed deserunt! Exercitationem, reprehenderit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus atque laboriosam sequi autem eaque, vitae nihil itaque aperiam ipsum ut maxime similique, cumque quis, veniam beatae sed deserunt! Exercitationem, reprehenderit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus atque laboriosam sequi autem eaque, vitae nihil itaque aperiam ipsum ut maxime similique, cumque quis, veniam beatae sed deserunt! Exercitationem, reprehenderit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus atque laboriosam sequi autem eaque, vitae nihil itaque aperiam ipsum ut maxime similique, cumque quis, veniam beatae sed deserunt! Exercitationem, reprehenderit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus atque laboriosam sequi autem eaque, vitae nihil itaque aperiam ipsum ut maxime similique, cumque quis, veniam beatae sed deserunt! Exercitationem, reprehenderit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus atque laboriosam sequi autem eaque, vitae nihil itaque aperiam ipsum ut maxime similique, cumque quis, veniam beatae sed deserunt! Exercitationem, reprehenderit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus atque laboriosam sequi autem eaque, vitae nihil itaque aperiam ipsum ut maxime similique, cumque quis, veniam beatae sed deserunt! Exercitationem, reprehenderit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus atque laboriosam sequi autem eaque, vitae nihil itaque aperiam ipsum ut maxime similique, cumque quis, veniam beatae sed deserunt! Exercitationem, reprehenderit!
+    </p>
+</section>
+<!-- Gallery section -->
+<section class="gallery-section" id="gallery">
+    <h1>Gallery</h1>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus atque laboriosam sequi autem eaque, vitae nihil itaque aperiam ipsum ut maxime similique, cumque quis, veniam beatae sed deserunt! Exercitationem, reprehenderit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus atque laboriosam sequi autem eaque, vitae nihil itaque aperiam ipsum ut maxime similique, cumque quis, veniam beatae sed deserunt! Exercitationem, reprehenderit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus atque laboriosam sequi autem eaque, vitae nihil itaque aperiam ipsum ut maxime similique, cumque quis, veniam beatae sed deserunt! Exercitationem, reprehenderit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus atque laboriosam sequi autem eaque, vitae nihil itaque aperiam ipsum ut maxime similique, cumque quis, veniam beatae sed deserunt! Exercitationem, reprehenderit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus atque laboriosam sequi autem eaque, vitae nihil itaque aperiam ipsum ut maxime similique, cumque quis, veniam beatae sed deserunt! Exercitationem, reprehenderit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus atque laboriosam sequi autem eaque, vitae nihil itaque aperiam ipsum ut maxime similique, cumque quis, veniam beatae sed deserunt! Exercitationem, reprehenderit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus atque laboriosam sequi autem eaque, vitae nihil itaque aperiam ipsum ut maxime similique, cumque quis, veniam beatae sed deserunt! Exercitationem, reprehenderit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus atque laboriosam sequi autem eaque, vitae nihil itaque aperiam ipsum ut maxime similique, cumque quis, veniam beatae sed deserunt! Exercitationem, reprehenderit!
+    </p>
+</section>
+<!-- Contact us section -->
+<section class="contact-section" id="contact">
+    <h1>Contact us</h1>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus atque laboriosam sequi autem eaque, vitae nihil itaque aperiam ipsum ut maxime similique, cumque quis, veniam beatae sed deserunt! Exercitationem, reprehenderit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus atque laboriosam sequi autem eaque, vitae nihil itaque aperiam ipsum ut maxime similique, cumque quis, veniam beatae sed deserunt! Exercitationem, reprehenderit!
+    </p>
+</section>
+</body>
+</html>
